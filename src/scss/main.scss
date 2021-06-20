@@ -1,8 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@500;600;700&family=Spectral:wght@300;400&display=swap");
+@import "normalize.css";
 @import "settings/colors";
 @import "settings/fonts";
+@import "elements/header";
+@import "elements/nav";
+@import "elements/welcome";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: $font-base;
+  font-weight: 300;
+}
+h1 {
+  margin: 0;
+  font-family: $font-bold;
+  font-weight: 700;
+}
+h2 {
+  font-weight: 300;
 }
