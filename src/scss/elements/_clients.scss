@@ -1,0 +1,53 @@
+.clients-section {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-image {
+  width: 100px;
+  height: 100px;
+  fill: black;
+}
+.clients-track {
+  display: flex;
+}
+// .clients {
+//   width: 90%;
+//   height: 80%;
+//   overflow: hidden;
+//   position: relative;
+//   margin: auto;
+// }
+// .clients::before,
+// .clients::after {
+//   content: "";
+//   position: absolute;
+//   width: 200px;
+//   height: 100%;
+//   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+//   z-index: 2;
+// }
+// .clients::before {
+//   top: 0;
+//   left: 0;
+// }
+// .clients::after {
+//   top: 0;
+//   right: 0;
+//   transform: rotateZ(180deg);
+// }
+// .clients-track {
+//   display: flex;
+//   width: calc(250px * 14);
+//   animation: scroll 40s infinite linear;
+// }
+// @keyframes scroll {
+//   0% {
+//     transform: translateX(0%);
+//   }
+//   100% {
+//     transform: translateX(calc(-250px * 10));
+//   }
+// }

@@ -2,9 +2,15 @@
 @import "normalize.css";
 @import "settings/colors";
 @import "settings/fonts";
+@import "settings/mixins";
 @import "elements/header";
 @import "elements/nav";
 @import "elements/welcome";
+@import "elements/columns";
+@import "elements/column";
+@import "elements/offer";
+@import "elements/video";
+@import "elements/clients";
 
 * {
   box-sizing: border-box;
@@ -32,4 +38,7 @@ h2 {
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+p {
+  font-size: 18px;
 }
