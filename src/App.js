@@ -9,6 +9,7 @@ import DataAnal from "./pages/DataAnal"
 import Security from "./pages/Security"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
+import Logout from "./pages/Logout"
 
 function App() {
   const authState = useAuthInit();
@@ -20,6 +21,7 @@ function App() {
               <Route exact path="/" component={Home}></Route>
               <Route path="/login" component={Login}></Route>
               <Route path="/register" component={Register}></Route>
+              <Route path="/logout" component={Logout}></Route>
               <Route path="/about" component={About}></Route>
               <Route path="/security" component={Security}></Route>
               <Route path="/data" component={DataAnal}></Route>
