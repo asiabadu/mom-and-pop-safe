@@ -17,7 +17,15 @@ function Home() {
         <Header></Header>
       </header>
       <main>
-        <Welcome></Welcome>
+        <Welcome
+          header="welcome"
+          text="Cupcake ipsum dolor sit amet chocolate cake chocolate. Croissant
+          tootsie roll pudding fruitcake jelly-o oat cake carrot cake. Toffee
+          caramels icing. Icing pudding I love sugar plum apple pie dragée candy
+          lollipop. Fruitcake chocolate cake pastry I love marzipan lemon drops
+          sweet roll. Sweet roll lemon drops gummi bears. Oat cake jelly beans
+          sugar plum."
+        ></Welcome>
         <Columns></Columns>
         <Offer></Offer>
         <Video></Video>
