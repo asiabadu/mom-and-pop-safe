@@ -14,14 +14,16 @@ function Clients() {
   return (
     <div className="clients-section">
       <div className="clients-section-content">
-        <h2>our clients</h2>
+        <h2 className="clients-section-text">our clients</h2>
         <span className="horizontal-line">
           <hr></hr>
         </span>
         <div className="clients">
           <div className="clients-track">
             <div className="clients-element">
-              <img className="logo-image" src={aro} alt="aro logo"></img>
+              <object className="logo-image" data={aro}>
+                aro logo
+              </object>
             </div>
             <div className="clients-element">
               <img
