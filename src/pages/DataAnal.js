@@ -12,13 +12,13 @@ function DataAnal() {
     <div className="DataAnal">
       <Nav></Nav>
       <iframe
-        src="https://trinket.io/embed/python/3d8d7ce66b"
+        src="https://trinket.io/embed/python/9dc6feda15"
         width="100%"
-        height="356"
-        frameborder="0"
-        marginwidth="0"
-        marginheight="0"
-        allowfullscreen
+        height="600"
+        frameBorder="0"
+        marginWidth="0"
+        marginHeight="0"
+        allowFullScreen
         title="python"
       ></iframe>
       <p>data works</p>
