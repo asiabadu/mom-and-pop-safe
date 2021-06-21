@@ -27,7 +27,7 @@ const Nav = () => {
             <NavLink
               to="/about"
               className="nav-link"
-              activeStyle={{ color: "red" }}
+              activeStyle={{ background: "#a53f52" }}
             >
               About us
             </NavLink>
@@ -36,7 +36,7 @@ const Nav = () => {
             <NavLink
               to="/data"
               className="nav-link"
-              activeStyle={{ color: "red" }}
+              activeStyle={{ background: "#a53f52" }}
             >
               Data analysis
             </NavLink>
@@ -45,7 +45,7 @@ const Nav = () => {
             <NavLink
               to="/contact"
               className="nav-link"
-              activeStyle={{ color: "red" }}
+              activeStyle={{ background: "#a53f52" }}
             >
               Contact
             </NavLink>
@@ -58,7 +58,10 @@ const Nav = () => {
             </NavLink>
           </button>
           {loggedIn && (
-            <button className="account-button" onClick={() => auth.signOut()}>
+            <button
+              className="account-button logout-button"
+              onClick={() => auth.signOut()}
+            >
               <NavLink exact to="/logout" className="account-link">
                 <FontAwesomeIcon icon={faSignOutAlt} />
               </NavLink>

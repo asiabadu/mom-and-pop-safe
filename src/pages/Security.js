@@ -1,8 +1,11 @@
 import React from "react";
+import Nav from "../components/Nav";
+
 function Security() {
   return (
     <div className="Security">
-    <p>Security</p>
+      <Nav></Nav>
+      <p>Security</p>
     </div>
   );
 }

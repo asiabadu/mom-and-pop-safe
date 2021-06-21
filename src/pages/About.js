@@ -1,8 +1,11 @@
 import React from "react";
+import Nav from "../components/Nav";
+
 function About() {
   return (
-    <div className="Home">
-    <p>About</p>
+    <div className="about">
+      <Nav></Nav>
+      <p>About</p>
     </div>
   );
 }

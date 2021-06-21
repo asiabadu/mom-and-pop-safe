@@ -1,8 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Redirect } from "react-router-dom";
 import Nav from "../components/Nav";
+import { useAuth } from "../firebase/auth";
 
 const Logout = () => {
+  const { loggedIn } = useAuth();
+  if (!loggedIn) {
+    return <Redirect to="/" />;
+  }
   return (
     <div className="logout-page">
       <Nav />

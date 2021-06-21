@@ -6,6 +6,8 @@ import Columns from "../components/Columns";
 import Offer from "../components/Offer";
 import Video from "../components/Video";
 import Clients from "../components/Clients";
+import Testimonials from "../components/Testimonials";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -20,8 +22,11 @@ function Home() {
         <Offer></Offer>
         <Video></Video>
         <Clients></Clients>
+        <Testimonials></Testimonials>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   );
 }
