@@ -1,34 +1,29 @@
 import React from "react";
 import { useFormik } from "formik";
-import { NavLink, Redirect } from "react-router-dom";
 import { auth } from "../firebase/firebase";
-import { useAuth } from "../firebase/auth";
-
-import Nav from "../components/Nav";
 
 const validate = (values) => {
   const errors = {};
   if (!values.password) {
-    errors.password = "Hasło jest wymagane!";
+    errors.password = "Please fill out this field!";
   } else if (values.password.length < 6) {
-    errors.password = "Podane hasło jest za krótkie!";
+    errors.password = "Password is too short!";
   }
   if (!values.confPassword) {
-    errors.confPassword = "Hasło jest wymagane!";
+    errors.confPassword = "Please fill out this field!";
   } else if (values.confPassword !== values.password) {
-    errors.confPassword = "Hasła się nie zgadzają";
+    errors.confPassword = "Passwords are not the same!";
   }
   if (!values.email) {
-    errors.email = "Email jest wymagany!";
+    errors.email = "Please fill out this field!";
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = "Podany email jest nieprawidłowy!";
+    errors.email = "Email address is not correct!";
   }
 
   return errors;
 };
 
 const Register = () => {
-  const { loggedIn } = useAuth();
   const formik = useFormik({
     initialValues: {
       password: "",
@@ -52,23 +47,23 @@ const Register = () => {
       console.log("error:", error);
     }
   };
-  if (loggedIn) {
-    return <Redirect to="/" />;
-  }
+
   return (
-    <div className="login-page">
-      <Nav />
-      <main className="login-content">
+    <div className="login-form-div">
+      <main className="login-form-content">
         <div className="login-header">
-          <h3>Załóż konto</h3>
+          <h2>Register</h2>
         </div>
+        <span className="horizontal-line">
+          <hr></hr>
+        </span>
         <form className="login-form" onSubmit={formik.handleSubmit}>
           <div className="form-element login-element">
-            <label htmlFor="email">Email</label>
             <input
               id="email"
               name="email"
               type="email"
+              placeholder="E-mail"
               onChange={formik.handleChange}
               value={formik.values.email}
               onBlur={formik.handleBlur}
@@ -81,11 +76,11 @@ const Register = () => {
             ) : null}
           </div>
           <div className="form-element login-element">
-            <label htmlFor="email">Hasło</label>
             <input
               id="password"
               name="password"
               type="password"
+              placeholder="Password"
               onChange={formik.handleChange}
               value={formik.values.password}
               onBlur={formik.handleBlur}
@@ -100,11 +95,11 @@ const Register = () => {
             ) : null}
           </div>
           <div className="form-element login-element">
-            <label htmlFor="email">Powtórz hasło</label>
             <input
               id="confPassword"
               name="confPassword"
               type="password"
+              placeholder="Repeat password"
               onChange={formik.handleChange}
               value={formik.values.confPassword}
               onBlur={formik.handleBlur}
@@ -118,17 +113,10 @@ const Register = () => {
               <div className="error-message">{formik.errors.confPassword}</div>
             ) : null}
           </div>
-          <button className="control-button" type="submit">
-            Wyślij
+          <button className="form-control-button" type="submit">
+            Register
           </button>
         </form>
-        <div className="control-buttons">
-          <button className="control-button">
-            <NavLink exact to="/login" className="control-link">
-              Zaloguj się
-            </NavLink>
-          </button>
-        </div>
       </main>
     </div>
   );

@@ -7,8 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import DataAnal from "./pages/DataAnal";
 import Security from "./pages/Security";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
+import LoginPage from "./pages/LoginPage";
 import Logout from "./pages/Logout";
 import Contact from "./pages/Contact";
 
@@ -20,8 +19,7 @@ function App() {
         <HashRouter>
           <>
             <Route exact path="/" component={Home}></Route>
-            <Route path="/login" component={Login}></Route>
-            <Route path="/register" component={Register}></Route>
+            <Route path="/login" component={LoginPage}></Route>
             <Route path="/logout" component={Logout}></Route>
             <Route path="/about" component={About}></Route>
             <Route path="/security" component={Security}></Route>
