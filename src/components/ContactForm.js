@@ -1,5 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
+import { emailVars } from "../emailkey/emailkey";
+import emailjs from "emailjs-com";
 
 const validate = (values) => {
   const errors = {};
@@ -46,10 +48,20 @@ const ContactForm = () => {
     validate,
     onSubmit: (values) => {
       console.log(values);
-      // loginUser(values);
+      sendEmail(values);
+      formik.resetForm();
     },
   });
-
+  const sendEmail = (values) => {
+    emailjs.send(emailVars.SERVICE_ID, emailVars.TEMPLATE_ID, values).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+  };
   return (
     <div className="contact-form-content ">
       <form className="login-form" onSubmit={formik.handleSubmit}>
