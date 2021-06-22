@@ -1,5 +1,9 @@
 import firebase from "firebase/app";
 import "firebase/auth";
+import "firebase/database";
+import "firebase/firestore";
+
+import Axios from "axios";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAupnJS_tloecwbul0BLKwNFvu5Jj9QYwY",
@@ -8,8 +12,10 @@ const firebaseConfig = {
   storageBucket: "mom-and-pops.appspot.com",
   messagingSenderId: "325206697258",
   appId: "1:325206697258:web:e195e895d053f382a06a53",
-  measurementId: "G-53KGVZV0QT"
+  measurementId: "G-53KGVZV0QT",
 };
 
 const app = firebase.initializeApp(firebaseConfig);
 export const auth = app.auth();
+export const db = firebase.firestore();
+export { Axios };
