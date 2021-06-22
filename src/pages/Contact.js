@@ -1,12 +1,17 @@
 import React from "react";
 import Nav from "../components/Nav";
+import ContactForm from "../components/ContactForm";
+import ContactContent from "../components/ContactContent";
 
 function Contact() {
   return (
-    <div className="contact">
+    <main className="contact">
       <Nav></Nav>
-      <p>Contact</p>
-    </div>
+      <main className="contact-section">
+        <ContactForm></ContactForm>
+        <ContactContent></ContactContent>
+      </main>
+    </main>
   );
 }
 export default Contact;
