@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
 import TestimonialsItem from "./TestimonialsItem";
+import parents from "../assets/photos/parents.jpg";
 import ola from "../assets/photos/adolezik.jpg";
 import domi from "../assets/photos/dponiedz.jpg";
 import ewelina from "../assets/photos/egracz.JPG";
@@ -24,77 +25,35 @@ const Testimonials = () => {
   return (
     <div className="testimonials">
       <Carousel breakPoints={breakPoints}>
+      <TestimonialsItem
+          photo={parents}
+          name="Kasia's Parents"
+          company="AshtonBooks"
+          desc="Our daughter's company saved our business, and we wholehartedly recommend their services. Not because we raised her. A little bit because we raised her. But we did raise her well."
+        ></TestimonialsItem>
         <TestimonialsItem
           photo={ola}
           name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
+          company="SparrowSecurity"
+          desc="A little birdie told us about this company and working with these guys has been the best decision, they pass any scrutiny with flying colors!"
         ></TestimonialsItem>
         <TestimonialsItem
           photo={domi}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
-        ></TestimonialsItem>
-        <TestimonialsItem
-          photo={ewelina}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
-        ></TestimonialsItem>
-        <TestimonialsItem
-          photo={jedrz}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
+          name="Dominika Poniedziałek"
+          company="Securea"
+          desc="Amazing service, our data is secure and I can sleep soundly thanks to Mom-and-Pop-Safe!"
         ></TestimonialsItem>
         <TestimonialsItem
           photo={mat}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
-        ></TestimonialsItem>
-        <TestimonialsItem
-          photo={lesiak}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
-        ></TestimonialsItem>
-        <TestimonialsItem
-          photo={marta}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
-        ></TestimonialsItem>
-        <TestimonialsItem
-          photo={wwa}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
-        ></TestimonialsItem>
-        <TestimonialsItem
-          photo={nat}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
-        ></TestimonialsItem>
-        <TestimonialsItem
-          photo={pati}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
-        ></TestimonialsItem>
-        <TestimonialsItem
-          photo={wyczes}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
+          name="Mateusz Bugajski"
+          company="Pacmen Inc."
+          desc="If it hadn't been for Mom-and-Pop-Safe, my business would probably have gone bankrupt by now and I would work in a factory. I don't want to work in a factory."
         ></TestimonialsItem>
         <TestimonialsItem
           photo={wiki}
-          name="Aleksandra Dolezik"
-          company="Lorem"
-          desc="Lorem ipsum dolor sit ahwauwhah hawdhaidhw ahwndihaidhw awhdnidawhiawdhii ahwifhiaw"
+          name="Wiktoria Stelmachniewicz"
+          company="NukeGuards"
+          desc="I could not be more happy with Mom-and-Pop-Safe's bombastic services, I am especially grateful to the guys for helping secure our website! 10/10 would recommend."
         ></TestimonialsItem>
       </Carousel>
     </div>

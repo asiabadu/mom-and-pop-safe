@@ -19,12 +19,12 @@ function Home() {
       <main>
         <Welcome
           header="welcome"
-          text="Cupcake ipsum dolor sit amet chocolate cake chocolate. Croissant
-          tootsie roll pudding fruitcake jelly-o oat cake carrot cake. Toffee
-          caramels icing. Icing pudding I love sugar plum apple pie dragée candy
-          lollipop. Fruitcake chocolate cake pastry I love marzipan lemon drops
-          sweet roll. Sweet roll lemon drops gummi bears. Oat cake jelly beans
-          sugar plum."
+          text="
+          At Mom-and-Pop-Safe, we understand that the Internet is not only for the big players. 
+          Whether it's a multinational corporation or a small family business, any company can 
+          become a target for cyberattacks. It is especially difficult to avoid for small businesses 
+          who often times don't have the adequate resources and knowledge. 
+          We believe that cybersecurity is crucial in running a business and we are here to help."
         ></Welcome>
         <Columns></Columns>
         <Offer></Offer>
